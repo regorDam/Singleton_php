@@ -10,9 +10,9 @@ namespace Core;
 
 abstract class Singleton
 {
-    protected static $instance = null;
+    private static $instance = null;
 
-    public function __construct()
+    private function __construct()
     {}
 
     public static  function Instance()
